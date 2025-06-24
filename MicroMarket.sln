@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{2B5D89EB-C52C-442A-8F5A-03D494F790EB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A307977-77BD-4EAF-9803-C46D0771BDE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,8 @@ Global
 		{2B5D89EB-C52C-442A-8F5A-03D494F790EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B5D89EB-C52C-442A-8F5A-03D494F790EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B5D89EB-C52C-442A-8F5A-03D494F790EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B5D89EB-C52C-442A-8F5A-03D494F790EB} = {6A307977-77BD-4EAF-9803-C46D0771BDE2}
 	EndGlobalSection
 EndGlobal
