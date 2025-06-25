@@ -1,5 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EF57D62E-A05B-41CE-AB81-723922F0ACF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroMarket.Contacts", "MicroMarket.Contacts\MicroMarket.Contacts.csproj", "{47438E96-8497-48F5-B04D-19C336A2C6B0}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{2B5D89EB-C52C-442A-8F5A-03D494F790EB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A307977-77BD-4EAF-9803-C46D0771BDE2}"
@@ -8,6 +12,15 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47438E96-8497-48F5-B04D-19C336A2C6B0} = {EF57D62E-A05B-41CE-AB81-723922F0ACF6}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47438E96-8497-48F5-B04D-19C336A2C6B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47438E96-8497-48F5-B04D-19C336A2C6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47438E96-8497-48F5-B04D-19C336A2C6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47438E96-8497-48F5-B04D-19C336A2C6B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2B5D89EB-C52C-442A-8F5A-03D494F790EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
