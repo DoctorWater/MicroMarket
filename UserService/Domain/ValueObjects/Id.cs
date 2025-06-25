@@ -4,11 +4,14 @@ public record Id
 {
     public Guid Value { get; }
 
-    public Id(Guid value)
+    private Id(Guid value)
     {
         ValidateId(value);
         Value = value;
     }
+    
+    public static Id New() => new(Guid.NewGuid());
+    public static Id New(Guid id) => new(id);
     
     private void ValidateId(Guid id)
     {

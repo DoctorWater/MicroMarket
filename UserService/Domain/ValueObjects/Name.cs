@@ -5,13 +5,15 @@ public record Name
     public string FirstName { get; }
     public string LastName { get; }
 
-    public Name(string firstName, string lastName)
+    private Name(string firstName, string lastName)
     {
         ValidateLastName(lastName);
         LastName = lastName;
         ValidateFirstName(firstName);
         FirstName = firstName;
     }
+    
+    public static Name Create(string firstName, string lastName) => new(firstName, lastName);
     
     private void ValidateFirstName(string firstName)
     {

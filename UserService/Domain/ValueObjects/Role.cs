@@ -4,11 +4,13 @@ public record Role
 {
     public RolesEnum Value { get; }
     
-    public Role(RolesEnum role)
+    private Role(RolesEnum role)
     {
         ValidateRole(role);
         Value = role;
     }
+    
+    public static Role Create(RolesEnum role) => new(role);
     
     private void ValidateRole(RolesEnum role)
     {

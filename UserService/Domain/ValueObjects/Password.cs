@@ -4,11 +4,13 @@ public record Password
 {
     public string PasswordHash { get; }
 
-    public Password(string passwordHash)
+    private Password(string passwordHash)
     {
         ValidatePassword(passwordHash);
         PasswordHash = passwordHash;
     }
+    
+    public static Password Create(string passwordHash) => new(passwordHash);
 
     private void ValidatePassword(string passwordHash)
     {

@@ -10,12 +10,22 @@ public class User
     public Password Password { get; private set; }
     public Role Role { get; private set; }
 
-    public User(Id id, Name name, Email email, Password password, Role role)
+    private User(Id id, Name name, Email email, Password password, Role role)
     {
         Id = id;
         Name = name;
         Email = email;
         Password = password;
         Role = role;
+    }
+
+    public static User Create(Email email, Name name, Password hash, Role role)
+    {
+        return new User(Id.New(), name, email, hash, role);
+    }
+    
+    public static User Create(Guid id,Email email, Name name, Password hash, Role role)
+    {
+        return new User(Id.New(id), name, email, hash, role);
     }
 }

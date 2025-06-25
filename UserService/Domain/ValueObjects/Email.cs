@@ -4,11 +4,13 @@ public record Email
 {
     public string EmailAddress { get; }
 
-    public Email(string emailAddress)
+    private Email(string emailAddress)
     {
         EmailAddress = emailAddress;
         ValidateEmail(emailAddress);
     }
+    
+    public static Email Create(string emailAddress) => new(emailAddress);
 
     private void ValidateEmail(string email)
     {
